@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package application.view;
+package application.controler;
+
+import application.model.Model;
+import application.view.View;
 
 /**
  *
  * @author 2dam
  */
-public class ViewFactory {
+public class Controller {
     
-    public View getVIew(String typeV) {
-        View v = null;
-        
-        return v;
+    public void run(View typeV, Model typeM) {
+            
     }
     
 }

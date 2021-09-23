@@ -17,8 +17,7 @@ public class ModelFactory {
 
     public Model getModel(String typeM) {
         Model m = null;
-
-      
+        
         /*
         dependiendo del  valor de model , que nos devuelva del properties, 
         crea una una implementacion u otra.
@@ -34,6 +33,7 @@ public class ModelFactory {
                 System.out.println("Opcion invalida");
                 break;
         }
+        
         return m;
     }
 }
