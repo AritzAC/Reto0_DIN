@@ -11,10 +11,27 @@ package application.view;
  */
 public class ViewFactory {
     
-    public View getVIew(String typeV) {
-        View v = null;
+    public View getView(String typeV) {
+        View view = null;
         
-        return v;
+        switch (typeV) {
+        case "Text":
+            view = new TextViewImplementation();
+            break;
+            
+        case "Swing":
+            view = new SwingViewImplementation();
+            break;
+            
+        case "JavaFX":
+            view = new JavaFXViewImplementation();
+            break;
+        default:
+            System.out.println("Opcion invalida");
+            break;
+    }
+        
+        return view;
     }
     
 }

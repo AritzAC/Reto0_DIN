@@ -5,31 +5,32 @@
  */
 package application;
 
+import application.controler.Controller;
+import application.model.ModelFactory;
+import application.view.ViewFactory;
 import java.util.ResourceBundle;
+import static javax.swing.UIManager.getString;
 
 /**
  *
  * @author Aritz Arrieta y Mikel Matilla
  */
 public class Application {
-
-    /**
-     * @param args the command line arguments
-     */
-    private String typeM;
-    private ResourceBundle cofigFile;
-    public static void main(String[] args) {
-        // TODO code application logic here
     
-   
+    
+    
+    public static void main(String[] args) {
+        
+        String typeM  = ResourceBundle.getBundle("application.controler.config").getString("model");
+        String typeV  = ResourceBundle.getBundle("application.controler.config").getString("view");
+        
+        ModelFactory modelF = new ModelFactory();
+        ViewFactory viewF = new ViewFactory();
+        
+        Controller controller = new Controller();
+        controller.run(viewF.getView(typeV), modelF.getModel(typeM));
+    }
 
-     
-    //this.cofigFile  = ResourceBundle.getBundle("controler.config");
-
-     
-    //this.typeM  = cofigFile.getString("model");
-
-}
-   
-
+    
+    
 }

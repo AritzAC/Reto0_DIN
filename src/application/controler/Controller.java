@@ -14,8 +14,8 @@ import application.view.View;
  */
 public class Controller {
     
-    public void run(View typeV, Model typeM) {
-            
+    public void run(View view, Model model) {
+        view.showGreeting(model.getGreeting());
     }
     
 }

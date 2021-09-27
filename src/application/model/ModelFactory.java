@@ -12,28 +12,24 @@ import java.util.ResourceBundle;
  * @author 2dam
  */
 public class ModelFactory {
-
     
-
     public Model getModel(String typeM) {
-        Model m = null;
+        Model model = null;
         
-        /*
-        dependiendo del  valor de model , que nos devuelva del properties, 
-        crea una una implementacion u otra.
-         */
         switch (typeM) {
             case "Archive":
-                m = new ArchiveModelImplementation();
+                model = new ArchiveModelImplementation();
                 break;
+                
             case "BD":
-                m = new BDModelImplementation();
+                model = new BDModelImplementation();
                 break;
+                
             default:
                 System.out.println("Opcion invalida");
                 break;
         }
         
-        return m;
+        return model;
     }
 }

@@ -9,6 +9,11 @@ package application.view;
  *
  * @author 2dam
  */
-public class SwingViewImplementation {
+public class SwingViewImplementation implements View {
+
+    @Override
+    public void showGreeting(String greeting) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

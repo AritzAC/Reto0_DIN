@@ -9,6 +9,11 @@ package application.view;
  *
  * @author 2dam
  */
-public class TextViewImplementation {
+public class TextViewImplementation implements View {
+
+    @Override
+    public void showGreeting(String greeting) {
+        System.out.println(greeting);
+    }
     
 }

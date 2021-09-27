@@ -19,18 +19,17 @@ public class ArchiveModelImplementation implements Model {
     
     
     public ArchiveModelImplementation() {
-        this.messageFile = ResourceBundle.getBundle("control.message");
+        this.messageFile = ResourceBundle.getBundle("application.controler.message");
         this.message = messageFile.getString("message");
         
     }
 
     @Override
     public String getGreeting() {
-        String e = null;
         
+        this.message = messageFile.getString("message");
         
-        
-        return e;
+        return message;
     }
 
 }
