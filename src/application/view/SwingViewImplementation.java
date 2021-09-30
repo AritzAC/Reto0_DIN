@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author 2dam
+ * @author Aritz
  */
 public class SwingViewImplementation implements View {
 
