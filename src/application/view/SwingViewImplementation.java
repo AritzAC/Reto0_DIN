@@ -5,6 +5,9 @@
  */
 package application.view;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Aritz Arrieta y Mikel Matilla
@@ -13,7 +16,8 @@ public class SwingViewImplementation implements View {
 
     @Override
     public void showGreeting(String greeting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        JFrame jFrame = new JFrame();
+        JOptionPane.showMessageDialog(jFrame, greeting);
     }
     
 }
