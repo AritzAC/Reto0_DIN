@@ -17,8 +17,6 @@ import static javax.swing.UIManager.getString;
  */
 public class Application {
     
-    
-    
     public static void main(String[] args) {
         
         String typeM  = ResourceBundle.getBundle("application.controler.config").getString("model");
@@ -30,7 +28,5 @@ public class Application {
         Controller controller = new Controller();
         controller.run(viewF.getView(typeV), modelF.getModel(typeM));
     }
-
-    
     
 }

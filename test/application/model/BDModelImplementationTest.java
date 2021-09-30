@@ -7,20 +7,19 @@ package application.model;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.Ignore;
 
 /**
  *
- * @author Aritz Arrieta y Mikel Matilla
+ * @author 2dam
  */
-public class ArchiveModelImplementationTest {
+public class BDModelImplementationTest {
     
     @Test
     public void testGetGreeting() {
-        Model archiveModel = new ArchiveModelImplementation();
-        String greeting = "Hola Mundo Archivo";
+        Model bdModel = new BDModelImplementation();
+        String greeting = "Hola mundo BD";
         
-        assertEquals(greeting, archiveModel.getGreeting());
+        assertEquals(greeting, bdModel.getGreeting());
     }
     
 }

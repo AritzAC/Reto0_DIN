@@ -10,10 +10,15 @@ import application.view.View;
 
 /**
  *
- * @author 2dam
+ * @author Aritz Arrieta y Mikel Matilla
  */
 public class Controller {
     
+    /**
+     * 
+     * @param view
+     * @param model 
+     */
     public void run(View view, Model model) {
         view.showGreeting(model.getGreeting());
     }

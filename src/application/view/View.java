@@ -7,7 +7,7 @@ package application.view;
 
 /**
  *
- * @author 2dam
+ * @author Aritz Arrieta y Mikel Matilla
  */
 public interface View {
     public void showGreeting(String greeting);

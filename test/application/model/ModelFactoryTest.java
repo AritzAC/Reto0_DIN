@@ -7,20 +7,18 @@ package application.model;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.Ignore;
 
 /**
  *
- * @author Aritz Arrieta y Mikel Matilla
+ * @author 2dam
  */
-public class ArchiveModelImplementationTest {
+public class ModelFactoryTest {
     
     @Test
-    public void testGetGreeting() {
-        Model archiveModel = new ArchiveModelImplementation();
-        String greeting = "Hola Mundo Archivo";
+    public void testGetModel() {
+        ModelFactory modelF = new ModelFactory();
         
-        assertEquals(greeting, archiveModel.getGreeting());
+        assertNotNull(modelF);
     }
     
 }
