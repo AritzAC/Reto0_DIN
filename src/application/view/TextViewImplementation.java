@@ -6,11 +6,15 @@
 package application.view;
 
 /**
- *
+ *  Muestra el mensaje por intefaz de Texto
  * @author 2dam
  */
 public class TextViewImplementation implements View {
-
+    /**
+     * 
+     * @param greeting 
+     * es el mensaje que muestra
+     */
     @Override
     public void showGreeting(String greeting) {
         System.out.println(greeting);

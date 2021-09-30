@@ -8,7 +8,7 @@ package application.model;
 import java.util.ResourceBundle;
 
 /**
- *
+ * La implementacion de modelo que recoge los datos desde un Fichero
  * @author 2dam
  */
 public class ArchiveModelImplementation implements Model {
@@ -17,7 +17,9 @@ public class ArchiveModelImplementation implements Model {
     private String message;
     
     
-    
+    /**
+     * el metodo ArchiveModelImplementation() es para recoger el mensage desde un Fichero (message.propieties)
+     */
     public ArchiveModelImplementation() {
         this.messageFile = ResourceBundle.getBundle("application.controler.message");
         this.message = messageFile.getString("message");
