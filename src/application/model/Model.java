@@ -7,7 +7,7 @@ package application.model;
 
 /**
  * 
- * @author 2dam
+ * @author Aritz Arrieta y Mikel Matilla
  */
 public interface Model {
     /**

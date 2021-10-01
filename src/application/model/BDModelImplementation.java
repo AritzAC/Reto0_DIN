@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package application.model;
 
 import java.sql.Connection;
@@ -15,8 +11,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
- * @author 2dam
+ * Implementacion del modelo que recoge los datos desde la Base de Datos
+ * @author Aritz Arrieta y Mikel Matilla
  */
 public class BDModelImplementation implements Model{
     
@@ -30,6 +26,9 @@ public class BDModelImplementation implements Model{
     
     private final String SELECTgreet = "SELECT greet FROM greet";
     
+    /**
+     * el metodo BDModelImplementation , es la forma para adquirir las credenciales de la Base de Datos y saber la direccion de la Base de Datos
+     */
     public BDModelImplementation() {
         this.configFile = ResourceBundle.getBundle("application.controler.BDconfig");
         this.driverDB = configFile.getString("driver");
@@ -54,7 +53,10 @@ public class BDModelImplementation implements Model{
             con.close();
         }
     }
-    
+    /**
+     * es el metodo para recoger el String de la Base de Datos
+     * @return devuelve el valor guardado en la Base de Datos
+     */
     @Override
     public String getGreeting() {
         ResultSet rs = null;

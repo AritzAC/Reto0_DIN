@@ -22,5 +22,4 @@ public class ArchiveModelImplementationTest {
         
         assertEquals(greeting, archiveModel.getGreeting());
     }
-    
 }

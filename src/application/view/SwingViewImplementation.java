@@ -9,11 +9,13 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
- *
+ * Implementacion para la Vista de Java Swing
  * @author Aritz Arrieta y Mikel Matilla
  */
 public class SwingViewImplementation implements View {
-
+    /**
+     * @param greeting el mensaje que muestra
+     */
     @Override
     public void showGreeting(String greeting) {
         JFrame jFrame = new JFrame();

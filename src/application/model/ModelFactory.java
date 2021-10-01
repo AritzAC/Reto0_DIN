@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 
 /**
  *
- * @author 2dam
+ * @author Aritz Arrieta y Mikel Matilla
  */
 public class ModelFactory {
     

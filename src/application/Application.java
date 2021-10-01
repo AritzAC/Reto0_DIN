@@ -12,11 +12,15 @@ import java.util.ResourceBundle;
 import static javax.swing.UIManager.getString;
 
 /**
- *
+ * Clase principal Aplicación
  * @author Aritz Arrieta y Mikel Matilla
  */
 public class Application {
     
+    /**
+     * Método main
+     * @param args 
+     */
     public static void main(String[] args) {
         
         String typeM  = ResourceBundle.getBundle("application.controler.config").getString("model");
